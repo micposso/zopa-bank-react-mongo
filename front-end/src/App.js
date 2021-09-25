@@ -11,7 +11,6 @@ import AllData from "./components/allData";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // import data
-
 function App() {
   const [account, setAccount] = useState(Data);
 
@@ -35,6 +34,9 @@ function App() {
             </Route>
             <Route path="/balance">
               <Balance />
+            </Route>
+            <Route exact path="/">
+              <Home />
             </Route>
             <Route path="/alldata">
               <AllData alldata={Object.values(account)[0][0]} />

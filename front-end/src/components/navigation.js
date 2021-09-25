@@ -22,10 +22,10 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/create">Create Account</Nav.Link>
-            <Nav.Link href="/deposit">Deposit</Nav.Link>
-            <Nav.Link href="/withdraw">Withdraw</Nav.Link>
-            <Nav.Link href="/balance">Balance</Nav.Link>
+            {userInfo ? "" : <Nav.Link href="/create">Create Account</Nav.Link>}
+            {userInfo ? <Nav.Link href="/deposit">Deposit</Nav.Link> : ""}
+            {userInfo ? <Nav.Link href="/withdraw">Withdraw</Nav.Link> : ""}
+            {userInfo ? <Nav.Link href="/balance">Balance</Nav.Link> : ""}
             <Nav.Link href="/alldata">All Data</Nav.Link>
             {userInfo ? <Button onClick={logout}>Logout</Button> : ""}
           </Nav>
