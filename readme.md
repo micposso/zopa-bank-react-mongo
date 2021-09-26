@@ -17,7 +17,7 @@ NODE_ENV variable with development
 PORT = 5000 variable
 
 3- RUN SERVER and FRONT-END
-Run "npm run dev" for run frontend and backend same time.
+Run "npm run dev" for the root directory to run frontend and backend same time.
 
 The application will open on localhost:5000. 
 

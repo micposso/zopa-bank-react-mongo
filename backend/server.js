@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import morgan from "morgan";
 import cors from "cors"; 
 import bodyParser from "body-parser";
+import testCreateUserButton from './puppeteer';
 
 import errorHandler from "./middlewares/errorHandler.js";
 
@@ -40,3 +41,5 @@ app.listen(
   PORT,
   console.log(`Server is running on ${process.env.NODE_ENV} at port ${PORT}`)
 );
+
+testCreateUserButton();
