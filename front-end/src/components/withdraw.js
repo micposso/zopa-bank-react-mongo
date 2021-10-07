@@ -41,7 +41,7 @@ const Withdraw = () => {
       {error && <Alert variant="danger">{error}</Alert>}
       {success && (
         <Alert variant="success">
-          {`Withdraw Successful`} <Link to="/balance">Deposit</Link>
+          {`Withdraw Successful`} <Link to="/balance">Check your balance</Link>
         </Alert>
       )}
       <Card.Body>
